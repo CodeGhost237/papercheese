@@ -1,0 +1,20 @@
+@import url('./assets/style/fonts.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: 'SF UI Text', sans-serif;
+}
+
+.left-part{
+  background: url("./paper.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.logo h1, .logo span{
+  font-family: 'Filson Pro', sans-serif !important;                                       
+}
+.w-97{
+  width: 500px;
+}
