@@ -1,11 +1,11 @@
-export function Message({img, label, className}:Message){
+export function Message({label, className, className_i}:Message){
 
     return(
-        <div className={`${className} ${"flex justify-center p-3 border border-green-500 bg-green-200 rounded-md text-green-500 text-sm cursor-default"}`}>
-            <div className={className_i}>
-                <img src={img} alt="" />
+        <div className={`${className} ${"flex justify-center p-3 border text-sm cursor-default rounded-md"}`}>
+            <div className="">
+                <i className={className_i}/>
             </div>
-            <div className={className_l}>
+            <div className="">
                 <p>{label}</p>
             </div>
         </div>
@@ -13,9 +13,9 @@ export function Message({img, label, className}:Message){
 
 }
 type Message = {
-    img: string, 
     label: string,
     className: any;
+    className_i : any
 }
 
 export default Message

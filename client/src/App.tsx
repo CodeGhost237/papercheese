@@ -34,7 +34,8 @@ function App() {
         <aside className="form-container w-97">
           <div className="logo mb-8 ">
             <h1 className="select-none cursor-pointer text-yellow-300 mb-2 text-xl text-left font-bold"><span className="text-yellow-200">PAPER</span>CHEESE</h1>
-            <Message label = {"Ceci est un message d'erreur"}/>
+            <Message label = {"Ceci est un message d'erreur"} className_i={"fa-solid fa-circle-check mr-2"} className={"border-green-500 bg-green-200 text-green-500 hidden"} />
+            <Message label = {"Ceci est un message d'erreur"} className_i={"fa-solid fa-circle-xmark mr-2"} className={"border-red-500 bg-red-200 text-red-500 hidden"} />
           </div>
           <div className="text">
             <h1 className="text-3xl text-left font-semibold text-slate-900 my-4 ">Créez un compte</h1>
@@ -55,7 +56,6 @@ function App() {
         </aside>
       </div>
       <aside className="left-part w-full m-5 rounded-2xl flex items-center justify-center">
-        <p>"Lorem ipsum dolor sit amet consectetur."</p>
       </aside>
 
 
