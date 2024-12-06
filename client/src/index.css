@@ -8,7 +8,7 @@
 }
 
 .left-part{
-  background: url("./paper.jpg") no-repeat center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./paper.jpg") no-repeat center;
   background-size: cover;
 }
 
@@ -17,4 +17,25 @@
 }
 .w-97{
   width: 500px;
+}
+@media (max-width : 1280px){
+  .yellow-paper{
+    display: none;
+  }
+  form{
+    justify-content: center;
+  }
+  h1, p{
+    text-align: center;
+  }
+}
+@media (max-width : 580px){
+  .w-97{
+    width: 400px;
+  }
+}
+@media (max-width : 480px){
+  .w-97{
+    width: 300px;
+  }
 }

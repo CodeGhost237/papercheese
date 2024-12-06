@@ -1,7 +1,7 @@
 export function Message({label, className, className_i}:Message){
 
     return(
-        <div className={`${className} ${"flex justify-center p-3 border text-sm cursor-default rounded-md"}`}>
+        <div className={`${className} ${"flex justify-left max-xl:justify-center p-3 border text-sm cursor-default rounded-md"}`}>
             <div className="">
                 <i className={className_i}/>
             </div>
