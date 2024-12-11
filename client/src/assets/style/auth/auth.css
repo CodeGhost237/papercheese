@@ -1,0 +1,111 @@
+*{
+    font-family: 'SF UI Text', sans-serif;
+  }
+  body{
+    background-color: #fff;  
+  }
+  
+  .left-part{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("./paper.jpg") no-repeat center;
+    background-size: cover;
+  }
+  
+  .logo h1, .logo span{
+    font-family: "Montserrat Alternates", sans-serif !important;                                  
+  }
+  .w-97{
+    width: 450px;
+  }
+  @media (max-width : 1280px){
+    .yellow-paper{
+      display: none;
+    }
+    form{
+      justify-content: center;
+    }
+    h1, p{
+      text-align: center;
+    }
+  }
+  @media (max-width : 580px){
+    .w-97{
+      width: 400px;
+    }
+  }
+  @media (max-width : 480px){
+    .w-97{
+      width: 300px;
+    }
+  }
+  
+  .popanimate {
+    animation: animatepopup .3s ease-in-out ;
+  }
+  
+  
+  @keyframes animatepopup{
+    0%{
+      opacity: 0;
+      transform: scale(90%);
+    }
+    50%{
+      opacity: 1;
+      transform: scale(103%);
+    }
+    100%{
+      opacity: 1;
+      transform: scale(100%);
+    }
+  }
+  
+  
+  
+  
+  .nextanimate{
+    animation: next .2s ease-in-out;
+  }
+  
+  
+  @keyframes next{
+    0%{
+      transform: translateX(20%);
+      opacity: 0;
+    }
+    25%{
+      transform: translateX(10%);
+      opacity: 0.1;
+    }
+    50%{
+      transform: translateX(3%);
+      opacity: 0.5;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  
+  .prevanimate{
+    animation: prev .2s ease-in-out;
+  }
+  
+  
+  @keyframes prev{
+    0%{
+      transform: translateX(-20%);
+      opacity: 0;
+    }
+    25%{
+      transform: translateX(-10%);
+      opacity: 0.2;
+    }
+    50%{
+      transform: translateX(-3%);
+      opacity: 0.5;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  

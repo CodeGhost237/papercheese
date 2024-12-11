@@ -1,7 +1,10 @@
-export function Btnmedia({img, label, value, type, alt}: BtnmediaProps){
+
+
+export function Btnmedia({img, label, value, type, alt, onClick}: BtnmediaProps){
+
 
     return(
-        <button className="flex items-center justify-center p-3 py-4 rounded-md w-full cursor-pointer bg-gray-100 hover:bg-blue-50 transition-all" type={type} value={value} > 
+        <button className="flex items-center justify-center p-3 py-4 rounded-md w-full cursor-pointer bg-gray-100 hover:bg-blue-50 transition-all" type={type} value={value} onClick={onClick}> 
             <div className={"mr-2"}>
                 <img src={img} alt={alt} width={20}/>
             </div>
@@ -17,6 +20,7 @@ type BtnmediaProps = {
     value?: any;      
     type: any;
     alt: string;
+    onClick : any;
 };
 
 export default Btnmedia
